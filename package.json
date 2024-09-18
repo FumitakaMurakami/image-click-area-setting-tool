@@ -1,0 +1,27 @@
+{
+  "name": "image-click-area-setting-tool",
+  "version": "0.1.6",
+  "description": "A JavaScript utility for creating interactive click areas within a container element, such as an image map or grid.",
+  "main": "dist/index.js",
+  "files": [
+    "dist/createClickAreas.js",
+    "src/style.css",
+    "assets/img/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "keywords": [
+    "click",
+    "interactive",
+    "image map",
+    "JavaScript",
+    "utility"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
