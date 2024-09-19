@@ -116,12 +116,32 @@ createClickAreas(rows, cols, imageContainer, clickEventData, handleClick, false)
 ```
 
 ```HTML
-<div id="windowContainer" class="d-flex justify-content-center align-items-center">
-    <div id="imageContainer" class="d-flex justify-content-center flex-column image-container">
-
-    <img id="sampleImage" src="./your/image/path" alt="Full Width Image" loading="lazy">
+<div id="windowContainer" class="windowContainer">
+    <div id="imageContainer" class="image-container">
+        <img id="sampleImage" src="./your/image/path" alt="Full Width Image" loading="lazy">
     </div>
 </div>
+```
+```css
+.windowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
 ```
 
 ### Setting Click Area
@@ -278,12 +298,32 @@ createClickAreas(rows, cols, imageContainer, clickEventData, handleClick, false)
 ```
 
 ```HTML
-<div id="windowContainer" class="d-flex justify-content-center align-items-center">
-    <div id="imageContainer" class="d-flex justify-content-center flex-column image-container">
-
-    <img id="sampleImage" src="./your/image/path" alt="Full Width Image" loading="lazy">
+<div id="windowContainer" class="windowContainer">
+    <div id="imageContainer" class="image-container">
+        <img id="sampleImage" src="./your/image/path" alt="Full Width Image" loading="lazy">
     </div>
 </div>
+```
+```css
+.windowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
 ```
 
 ### クリックエリアの設定法
